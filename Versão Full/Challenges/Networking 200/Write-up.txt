@@ -1,3 +1,6 @@
+
+* O arquivo foi dividido em duas partes devido a limitação do github (max 50MB).
+
 Analisando o arquivo com o Wireshark, vendo as requisições POST (http.request.method == POST), encontramos um form que foi enviado em uma página
 chamada /parties-events. Nele consta a mensagem: 
 
