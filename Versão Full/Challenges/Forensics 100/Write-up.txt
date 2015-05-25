@@ -1,0 +1,1 @@
+Após analisar a imagem, aplicamos o filtro "Erodir" do Gimp 2 vezes, e podemos ver a flag. Também pode ser resolvido facilmente com o stegsolve.

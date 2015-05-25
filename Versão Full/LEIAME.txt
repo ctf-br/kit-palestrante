@@ -1,0 +1,44 @@
+
+
+Considerações iniciais:
+
+Esta palestra pode ser usada de modelo para apresentações do nosso Projeto pelo Brasil! Ela foi feita no LibreOffice Impress, dê preferência por usá-lo na edição.
+
+Título: Projeto CTF-BR e o Maravilhoso Mundo das Competições Capture the Flag (CTF)
+
+Duração estimada: depende do palestrante, mas o tempo estimado é de 1h à 1h15m.
+
+Fonte utilizada nos slides: Architect's Daughter, que está na pasta Fonte. Instalar ela antes de abrir o .odp.
+
+##################################################
+
+Os challenges para o "Mãos na Massa" estão na pasta "Challenges". O arquivo do challenge propriamente dito está com o nome "file". Também consta um write-up junto, para o palestrante dar uma revisada, se quiser. Também é legal tentar entender mais a fundo os challenges pra dar mais detalhes, caso alguém se interesse.
+
+Na hora de citar a pontuação dos write-ups e demais challenges que constam nos slides, é bom explicar a escala, por exemplo:
+DEF CON Quals 2014: 1 a 5 pontos.
+HITCON 2014: 10 a 550 pontos.
+Hacking n' Roll: 100 a 500 pontos.
+CSAW: 100 a 500 pontos.
+Brooklynt Overflow Recruitment: todos de 100 pontos.
+
+Alterações que devem ser feitas *obrigatoriamente*:
+
+1º Slide - Nome do palestrante
+2º Slide - Infos do palestrante
+
+Alterações que podem ser feitas *opcionalmente*:
+
+26º Slide - Alguns write-ups foram colocados neste slide, exatamente pra ilustrar os "formatos" que podem ter:
+	tarmful - Foi divulgado só o shell script que foi utilizado na resolução, sem maiores explicações;
+	frypto - Explicação simples e rápida, feito pelo Pão de Batãta;
+	dosfun4u - Um write-up grande de um challenge complexo, com diversas páginas ilustradas de explicação.
+
+34º Slide - Coloquei alguns challenges simples que podem ser reproduzidos ao vivo (Mãos na Massa). Se você quiser mudá-los, sinta-se à vontade!
+
+OBSERVAÇÃO:
+Se o vídeo, imagens ou write-ups não abrirem (perderem o path), linke-os novamente, todas estão nas pastas devidas. Após terminar as modificações, se desejar, transforme em PDF para facilitar a apresentação.
+
+O mais importante é utilizar a criatividade e fazer uma palestra descontraída, bem informativa e descolada!! :D
+
+
+

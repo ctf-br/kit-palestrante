@@ -1,0 +1,26 @@
+
+
+Escolha a versão que quer utilizar dependendo do tempo que tem disponível. :)
+
+
+VERSÃO COMPACTA:
+
+É uma versão resumida sobre CTFs e o Projeto CTF-BR. Vai direto ao ponto. Criada por rick2600.
+Duração: De 30 à 45 min.
+
+
+VERSÃO FULL:
+
+É uma versão completa, aborda vários fatores sobre os CTFs e sobre o Projeto em si. Têm demonstrações práticas de challenges, além de permitir a customização dos slides com os dados do palestrante. Criada por AlissonB.
+Duração: De 1h à 1h15m.
+
+
+O tempo, obviamente, depende muito do palestrante.
+
+
+Exemplo de Descrição para a Submissão:
+
+Esta palestra visa fazer uma introdução sobre o maravilhoso mundo das competições Capture the Flag (CTF), eventos de segurança da informação que englobam muitas competências das equipes participantes, exigindo a resolução rápida de problemas de diversas categorias e níveis de dificuldade, obtendo assim as flags e pontuando. O Projeto CTF-BR (www.ctf-br.org) também será explanado.
+
+
+

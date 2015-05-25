@@ -1,0 +1,7 @@
+O arquivo se trata de um executável ELF x86-64.
+
+Ao analisar o arquivo com objdump -S, observa-se que o programa em questão possui uma função chamada encode. Utilizamos o gdb para verificar mais a fundo o que função o programa realiza adicionando um break point em encode (b encode). Quando programa pára, obtemos como saída do gdb a seguinte linha:
+
+Breakpoint 1, encode (msg=0x7fffffffe6b0 “FfIiBbOoNnAaCcCcIi”) at frypto.c:10
+
+O que nos leva a resposta do exercício: FfIiBbOoNnAaCcCcIi

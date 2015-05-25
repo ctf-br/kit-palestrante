@@ -1,0 +1,11 @@
+Analisando o arquivo com o Wireshark, vendo as requisições POST (http.request.method == POST), encontramos um form que foi enviado em uma página
+chamada /parties-events. Nele consta a mensagem: 
+
+Hey%21+I+want+to+plan+a+party+at+your+venue.+I%27m+expecting+a+lot+of+people+though+and+I+don%27t+want+anyone+who+isn%27t+supposed+to+be+there+showing+up+for+the+fun.+If+you+can+do+me+a+favor+and+make+sure+to+ask+for+the+phrase+%22brooklyn+beat+box%22+before+letting+attendees+in%2C+that+would+be+awesome%21.
+
+Traduzindo o HTML Encode:
+
+Hey! I want to plan a party at your venue. I'm expecting a lot of people though and I don't want anyone who isn't supposed to be there showing up for the fun. If you can do me a favor and make sure to ask for the phrase "brooklyn beat box" before letting attendees in, that would be awesome!
+
+
+FLAG (senha para entrar na festa): brooklyn beat box
