@@ -1,0 +1,3 @@
+
+
+Lendo a descrição do challenge, podemos ver que o texto é recurssivo. Pesquisando pelo nome dos "Capitães", podemos ver que tem a ver com a Sequência de Fibonacci. Pegando uma imagem (fibonacci.jpg), vemos que o número que "volta ao mesmo lugar" é 55, que no nosso caso é a flag. Obviamente a gente não teve esse raciocínio na hora, fomos chutando os primeiros números da Sequência até conseguir. Depois caiu a ficha da lógica. :)
