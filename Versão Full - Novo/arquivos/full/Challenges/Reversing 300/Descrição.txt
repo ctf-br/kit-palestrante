@@ -1,0 +1,1 @@
+Este código foi retirado de um dispositivo utilizado para autenticação de um dos agentes que nos espionaram. Porém preciso da chave que gera o token mostrado.

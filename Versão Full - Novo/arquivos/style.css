@@ -1,0 +1,572 @@
+
+@font-face {
+  font-family: "Lobster";
+  src: url("Lobster 1.4.otf");
+}
+
+body {
+  background: #DDD;
+  background: -webkit-radial-gradient(#F8F8F8 10%, #AAA);
+  background:    -moz-radial-gradient(#F8F8F8 10%, #AAA);
+  background:     -ms-radial-gradient(#F8F8F8 10%, #AAA);
+  background:      -o-radial-gradient(#F8F8F8 10%, #AAA);
+  background:         radial-gradient(#F8F8F8 10%, #AAA);
+  color: #555;
+  font-size: 40px;
+  font-family: "Liberation Sans", Arial, sans-serif;
+  text-align: left;
+}
+
+#term-border {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 30px;
+  height: 30px;
+  border-radius: 0 0 20px 0;
+  background: rgba(255,255,255,0.2);
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#term-border:hover {
+  width: 95%;
+  height: 97%;
+  background: rgba(255,255,255,0.8);
+  border-radius: 0 0 30px 0;
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  -ms-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
+}
+
+#term {
+  font-size: 18px;
+  position: relative;
+  height: 100%;
+  display: none;
+}
+#term-border:hover #term {
+  display: block;
+}
+
+#term .code {
+  font-size: 18px;
+  padding: 10px;
+  margin: 0;
+  width: auto;
+  height: auto;
+  display: block;
+  overflow: auto;
+  vertical-align: top;
+  background: rgba(255,255,255,0.6);
+  border-radius: 15px;
+  position: absolute;
+  border: 2px solid #FD0;
+  top: 2%;
+  bottom: 2%;
+  left: 51%;
+  right: 2%;
+  opacity: 0;
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  -ms-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
+}
+#term:hover .code {
+  opacity: 1;
+}
+
+#term .code.edit-box {
+  background: rgba(180,220,250,0.75);
+  font-family: monospace;
+  border: none;
+  padding: 0px;
+}
+#term iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+#term .code.highlight {
+  -webkit-transition: 0s;
+  -moz-transition: 0s;
+  -ms-transition: 0s;
+  -o-transition: 0s;
+  transition: 0s;
+  background: rgba(255,200,0,0.9);
+}
+
+#term .code.coffee {
+  left: 2%;
+  right: 51%;
+}
+
+#term .code.js:before,
+#term .code.coffee:before {
+  content: "Coffee";
+  font-weight: bold;
+  display: block;
+  position: absolute;
+  top: -2px;
+  right: 10px;
+  color: rgba(0,0,0,0.2)
+}
+#term .code.edit-box:before {
+  top: 0px;
+  right: 12px;
+}
+#term .code.js:before {
+  content: "JS";
+}
+
+#run {
+  position: absolute;
+  top: 30px;
+  right: 2.7%;
+  opacity: 0.3;
+  cursor: pointer;
+}
+
+#run:hover {
+  opacity: 1;
+}
+
+#log {
+  position: absolute;
+  top: 50%;
+  bottom: 2%;
+  left: 51%;
+  right: 2%;
+  border: 2px solid transparent;
+}
+
+#close-log {
+  position: absolute;
+  bottom: -10px;
+  right: 10px;
+  border: 1px solid #FFF;
+  font-size: 14px;
+  line-height: 14px;
+  width: 14px;
+  text-align: center;
+  background: #D77;
+  cursor: pointer;
+}
+
+#log ul {
+  position: absolute;
+  bottom: 0px;
+  max-height: 100%;
+  width: 100%;
+  overflow: auto;
+  padding: 0;
+  margin: 0;
+  background: rgba(200,230,250,0.8);
+  border-radius: 0 0 13px 13px;
+}
+
+#log li {
+  opacity: 1;
+  list-style: none;
+  padding: 5px 0px 5px 15px;
+  margin: 0px;
+  line-height: 16px;
+}
+
+pre code {
+  background: transparent;
+}
+
+pre.coffeescript {
+  //background: rgba(0,150,220, 0.2);
+}
+
+pre.javascript {
+  background: rgba(255,200,0, 0.2);
+}
+
+pre.coffeescript, pre.javascript,
+pre.coffeescript code, pre.javascript code {
+  position: relative;
+}
+
+pre.coffeescript:before,
+pre.javascript:before {
+  position: absolute;
+  top: -22px;
+  right: 0px;
+  padding: 4px 10px 0px 10px;
+  border-radius: 10px 10px 0 0;
+  font-size: 20px;
+  line-height: 18px;
+  font-weight: bold;
+  color: rgba(0,0,0, 0.4);
+}
+
+
+pre.javascript:before {
+  content: "JS";
+  background: rgba(255,200,0, 0.2);
+  letter-spacing: 2px;
+}
+
+code {
+  letter-spacing: -3px;
+}
+
+pre .keyword {
+  color: #06C;
+}
+
+.error {
+  color: red;
+}
+
+.atencao {
+  color: #D60;
+  text-shadow: 0 0 11px #FFA, 0 0 9px #FFA;
+  font-size: 120%;
+  line-height: 90%;
+  position: relative;
+  top: 2px;
+}
+
+h1 {
+  font-family: Lobster;
+  font-size: 60px;
+  color: #272f47;
+  text-align: center;
+  opacity: 0;
+}
+
+h2 {
+  font-family: Lobster;
+  font-size: 55px;
+  color: #555;
+  text-align: center;
+}
+
+.firefox h1 {
+  letter-spacing: -3px;
+}
+
+.step:first-child h1 {
+  opacity: 1;
+}
+
+/* active-block só existe com a modificação que fiz no impress.js */
+.active-block .step {
+  opacity: 0;
+}
+
+.active-block .step:first-child {
+  opacity: 1;
+}
+
+.active-block .step.active {
+  opacity: 1;
+}
+
+.metaStep:not(.active-block) .step {
+  opacity: 0;
+}
+
+.metaStep:not(.active-block) .step:last-child {
+  opacity: 0.4;
+}
+
+.metaStep:not(.active-block) .step:last-child h1 {
+  opacity: 1;
+}
+
+.step {
+  width: 1000;
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  -ms-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
+}
+
+.future, .past {
+  opacity: 0.4;
+}
+
+ul {
+  margin: 0px;
+  padding: 0px;
+  list-style-position: outside;
+}
+
+li {
+  list-style-position: outside;
+  list-style-image: url("raul-hacker-club-icon.png");
+  opacity: 0;
+  margin: 20px 0px 20px 20px;
+  padding: 0px;
+}
+
+li ul {
+  margin: 20px 0px;
+  padding: 0px 0px 0px 50px;
+}
+
+li li {
+  list-style-image: url("raul-hacker-club-icon.png");
+}
+.past li.visible, .active li.visible {
+  opacity: 1;
+}
+
+big, .big { font-size: 150%; letter-spacing: -2px; }
+small, .small { font-size: 66%; letter-spacing: 0px; }
+.transp { opacity: 0.4 }
+.bold { font-weight: bold }
+
+#abertura {
+  text-align: center;
+  opacity: 1;
+}
+
+#abertura h1 {
+  font-size: 80px;
+  line-height: 80px;
+  margin: 0px 0px 30px 0px;
+}
+
+#contato {
+  font-size: 108%;
+}
+
+#onde {
+  font-size: 89%;
+}
+
+#site {
+  font-size: 158%;
+}
+
+.impress-on-abertura .metaStep:not(.active-block) .future,
+.impress-on-abertura .metaStep:not(.active-block) .past {
+  opacity: 0;
+}
+
+.impress-on-abertura #intro,
+.impress-on-overview #intro {
+  opacity: 1;
+}
+
+#meta-intro h1 {
+  font-size: 80px;
+}
+
+#exemplo-graph h1 {
+  font-size: 50px;
+}
+#exemplo-graph code {
+  font-size: 16px;
+  letter-spacing: 0px;
+}
+
+#exemplo-graph-2 code {
+  font-size: 34px;
+  letter-spacing: 0px;
+}
+
+#exemplo-graph-2 .atencao {
+  color: #060;
+  font-size: 100%;
+  line-height: 110%;
+  top: 0px;
+}
+
+#class-ponto.future {
+  opacity: 0;
+}
+
+#meta-iced-2 {
+  font-size: 80%;
+}
+
+#meta-iced-2 pre {
+  margin-top: 0px;
+}
+
+#meta-iced-3 {
+  font-size: 90%;
+}
+
+#meta-contracts {
+  font-size: 95%;
+}
+
+#meta-contracts pre {
+  margin-bottom: 0px;
+}
+
+#meta-contracts .error {
+  margin: 0px;
+}
+
+#meta-contracts .error code {
+  color: #D00;
+  letter-spacing: 0px;
+}
+
+#meta-ember {
+  font-size: 89%;
+}
+
+#meta-ember pre {
+  margin: 25px 0px;
+}
+
+#meta-ember .coffeescript {
+  word-spacing: -5px;
+}
+
+#meta-ember .javascript {
+  font-size: 88%;
+  letter-spacing: 0px;
+}
+
+#teste pre code {
+  font-size: 80%;
+  letter-spacing: 0px;
+}
+
+#teste2 pre {
+  font-size: 70%;
+  letter-spacing: -1px;
+  background: rgba(0,0,0,0.3);
+  color: #FFF;
+  padding: 20px;
+}
+
+#teste2 b {
+  letter-spacing: 2px;
+}
+
+#teste2 in {
+  background: red;
+}
+
+#teste2 out {
+  background: green;
+}
+
+#teste2 .error {
+  color: #C00;
+}
+
+#teste2 .atencao {
+  color: #05A;
+}
+
+#doc h1 {
+  margin: 0px;
+}
+
+#doc pre {
+  margin: 0px;
+}
+
+#doc pre code {
+  font-size: 65%;
+  letter-spacing: -1px;
+  line-height: 100%;
+}
+
+#apiary div {
+  height: 300px;
+  background: rgba(0,0,0,0.2) url(apiNotepad.png) 80% 100% no-repeat;
+  margin: 50px 0px 20px 0px;
+}
+
+#annotateit small {
+  font-size: 90%;
+}
+
+#hubot div {
+  padding: 30px 20px;
+  background: url(old-mathematics.png) center;
+}
+
+#zombie h1 {
+  font-size: 54px;
+}
+.firefox #zombie h1 {
+  letter-spacing: -4px;
+}
+
+#zombie pre {
+  margin: 10px;
+}
+
+#zombie li {
+  margin-top: 0px;
+}
+
+#zombie code {
+  font-size: 75%;
+  letter-spacing: 0px;
+}
+
+#meta-coffee2 h1, #meta-coffee2 h2 {
+  margin: 0px;
+}
+
+#meta-coffee2 h2 span {
+  font-family: serif;
+  font-style: italic;
+  font-size: 120%;
+}
+
+#overview code {
+  font-size: 28px;
+  line-height: 50px;
+  font-weight: bold;
+  letter-spacing: 0px;
+  color: rgba(0,30,60, 0.6);
+  text-shadow: -1px 1px 1px rgba(255,255,255, 0.6);
+  display: block;
+  -webkit-transform: scale(1.4,1) rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+  position: absolute;
+  left: -60px;
+  top: -190px;
+  padding: 0px 100px 0px 5px;
+  background: rgba(0,80,160, 0.2);
+}
+
+#overview code i {
+  position: absolute;
+  left: -35px;
+  top: 0px;
+  display: block;
+  border: 25px solid rgba(0,80,160, 0.2);
+  border-right: none;
+  border-left: 35px solid transparent;
+}
+
+.impress-on-overview #overview.step {
+  opacity: 1;
+}
+
+.impress-on-overview .step:last-child {
+  opacity: 0.4;
+}
+
+.impress-on-overview .step:last-child li {
+  opacity: 1;
+}

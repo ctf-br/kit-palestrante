@@ -14,6 +14,10 @@ VERSÃO FULL:
 É uma versão completa, aborda vários fatores sobre os CTFs e sobre o Projeto em si. Têm demonstrações práticas de challenges, além de permitir a customização dos slides com os dados do palestrante. Criada por AlissonB.
 Duração: De 1h à 1h15m.
 
+VERSÃO FULL NOVA:
+
+Edite tudo no html
+jogue os arquivos nas pastas para organizar.
 
 O tempo, obviamente, depende muito do palestrante.
 

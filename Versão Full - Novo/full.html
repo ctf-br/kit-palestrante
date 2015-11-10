@@ -1,0 +1,627 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>CTF-BR | Capture The Flag</title>
+  <link rel="icon" type="image/x-icon" href="arquivos/raul-hacker-club-icon.png" />
+  <script src="arquivos/jquery-2.0.0.js"></script>
+  <script src="arquivos/coffee-script.js"></script>
+  <link rel="stylesheet" href="arquivos/highlight.js/styles/default.css">
+  <script src="arquivos/highlight.js/highlight.pack.js"></script>
+  <script src="arquivos/coffee-term.js"></script>
+  <link rel="stylesheet" type="text/css" href="arquivos/style.css" />
+</head>
+<body>
+<div id="impress" data-transition-duration="700">
+  <div id="abertura" class="step" data-x="1200" data-y="-100" data-scale="4">
+    <img src="arquivos/full/Imagens/CTF-BR(Colorido).png" height="200px">
+    <h1>CTF-BR</h1>
+    <div id="contato"></div>
+    <div id="onde">Ruy Barbosa &mdash; Salvador/BA &mdash; Novembro/2015</div>
+    <div id="site">http://ctf-br.org	</div>
+  </div>
+  <div id="intro" class="step" data-x="2450" data-y="-900" data-scale="1.5" data-rotate="-10">
+    <h1>“whoami”</h1>
+    <div style="text-align:right; margin-top:-40px; padding-bottom:40px">Fernando Pinheiro | #raulhc | Security Analyst at UFBA</div>
+  </div>
+  <div class="step" data-x="4000" data-y="-1900">
+    <h1>O que é?</h1>
+    <div>
+Um Projeto feito pela comunidade para a comunidade, com o intuito de disseminar a cultura dos CTFs pelo Brasil.</div> 
+  </div>
+
+  <div class="step" data-x="4000" data-y="-1100">
+    <h1>Quem faz?</h1>
+    <div>
+	Voluntários de diversos times brasileiros. Você também pode participar e contribuir!
+    </div> 
+    <center>
+    </center>
+  </div>
+  <div class="step" data-x="4000" data-y="-400">
+    <h1>Principais Objetivos</h1>
+    <div>
+         Mostrar que esse tipo de competição é extremamente útil para a formação intelectual e profissional dos participantes, pois exercita o raciocínio lógico, trabalho em equipe, e capacita os players a pensar “<strong>fora da caixa</strong>” na resolução de problemas diversos de infosec (segurança da informação) e lógica; 
+    </div>
+  </div>  
+  <div class="step" data-x="4000" data-y="300">
+    <h1>Principais Objetivos</h1>
+	<div>Disseminar a cultura do maravilhoso mundo das competições Capture the Flag no Brasil, tornando-as tão populares quanto as Maratonas de Programação.Visando cumprir esse objetivo, pretendemos dar palestras, utilizar redes sociais e outros recursos para chegar ao nosso público-alvo, que são estudantes, entusiastas e profissionais de TI;
+	</div>
+  </div>
+  <div class="step" data-x="4000" data-y="1000">
+    <h1>Principais Objetivos</h1>
+        <center>
+        </center>
+    <div>Utilizar o CTF-BR University para levar os CTFs às Universidades e Instituições de Ensino, bem como para  eventos de 	TI em geral, proporcionando um primeiro contato com esse mundo aos estudantes e/ou participantes;</div>
+ </div>
+  <div class="step" data-x="3000" data-y="700" data-rotate="90">
+    <h1>Como contribuir?</h1>
+    <div>Há diversas formas de contribuir, veja em <em><strong>http://ctf-br.org/contribua/</strong></em></div><br>
+    <div><strong>As principais são:</strong> financeiramente, com hardwares, criando challenges e levando o CTF-BR University para sua Instituição de Ensino ou Evento..</div>
+  </div>
+  <div class="step" data-x="3000" data-y="1800" data-rotate="90">
+    <h1>CTF-BR University</h1>
+   <center> 
+   <div>Você deseja um CTF introdutório na sua Universidade ou Evento? 
+Nós podemos proporcioná-lo!
+Utilizando a mesma plataforma do Pwn2Win CTF, e com 12 challenges (6 iniciantes e 6 avançados), podemos organizar um CTF na sua Instituição e estimular os alunos a trabalhar em equipe e pensar “fora da caixa”!</div>
+  </center>
+  </div>
+  <div class="step" data-x="4000" data-y="1600">
+    <h1>Beleza, e o que é esse CTF?</h1>
+	<center>
+        <div><strong>Capture the Flag</strong> é um tipo de competição que envolve diversas competências das equipes formadas por profissionais, estudantes ou entusiastas, para a realização de desafios relacionados à infosec (Segurança da Informação) e lógica.</div>
+  </div>
+	</center>
+  <div class="step" data-x="4000" data-y="2250">
+    <h1>Continua...</h1>
+        <center>
+          <div>Têm duração normalmente de 24 ou 48 <strong>consecutivas (sem intervalo)</strong>, sendo que algumas possuem as qualificatórias online e as finais on-site (offline).</div><br>
+          <div><strong>A estratégia de “logística” da equipe conta muito para se dar bem!</strong></div>
+        </center>
+  </div>
+
+  <div class="step" data-x="2000" data-y="1800" data-rotate="90">
+    <h1>O que são as flags?</h1>
+        <center>
+          <div>As flags nessas competições são <strong>um código</strong> que as equipes obtêm ao realizar os desafios. Com esse código em mãos, a equipe submete no sistema online e obtêm os pontos referentes àquele desafio em específico.</div>
+        </center>
+  </div>
+
+  <div class="step" data-x="2000" data-y="3000" data-rotate="90">
+    <h1>Exemplos de flag</h1>
+        <center>
+          <div>As competições têm tentado <strong>padronizar</strong> as flags nos últimos anos, colocando o nome do evento antes (<strong>EVENTO{flag}</strong>). Em suma, o formato varia de competição pra competição, e as vezes dentro da própria competição. </div>
+        </center>
+  </div>
+
+  <div class="step" data-x="2000" data-y="4400" data-rotate="90">
+    <h1>Exemplos</h1>
+        <center>
+          <div><strong>HITCON CTF 2014:</strong></div><br>
+	  <div>HITCON{a755be06b165ed8fc4710d3544fce942}</div><br>
+	  <div>HITCON{SO0O0OO_MaNy_7Ar_Le\/eLs}</div>
+        </center>
+  </div>
+
+
+  <div class="step" data-x="1200" data-y="1800" data-rotate="90">
+    <h1>Mais alguns exemplos</h1>
+        <center>
+          <div><strong>2º e 3º Hacking n' Roll (<span id="b">BR</span>)</strong></div>
+	  <div><pre>
+55
+DEFACEDDECADE
+BoltCanDoIt
+FfIiBbOoNnAaCcCcIi
+	  </pre></div>
+        </center>
+  </div>
+  <div class="step" data-x="400" data-y="1800" data-rotate="90">
+    <h1>Formatos CTF</h1>
+        <center>
+          <div>
+		<pre>
+1º <strong>Jeopardy-Style</strong>
+2º <strong>Attack / Defese</strong>
+3º <strong>Híbridos</strong>
+		</pre>
+	  </div>
+        </center>
+  </div>
+  <div class="step" data-x="-300" data-y="1800" data-rotate="90">
+    <h1>Jeopardy-style</h1>
+        <center>
+          <div>Estilo <em>Quiz</em>, possuem <em>challenges</em> de diversas categorias, níveis de dificuldade e pontuações. Tanto as categorias, como o formato de pontuação variam de evento pra evento. </div>
+        </center>
+  </div>
+  <div class="step" data-x="-1000" data-y="2800" data-rotate="90">
+    <h1>Categorias</h1>
+	<div><pre>
+<strong>For</strong>ensics (Forense)
+<strong>Rev</strong>ersing (Eng. Reversa)
+<strong>Pwn</strong>able/Exploitation (Exploração de binários)
+<strong>Net</strong>working (Redes)
+<strong>Misc</strong>ellaneous (Diversos)
+<strong>Trivia</strong> (Triviais)
+<strong>Crypto</strong> (Criptografia)
+<strong>Web</strong> Hacking.
+             </pre>
+        </div>
+  </div>
+  <div class="step" data-x="100" data-y="-950" data-rotate="180">
+    <center>
+          <img src="arquivos/full/Imagens/Pwn2Win.png" height="500px">
+    </center>
+  </div>
+  <div class="step" data-x="100" data-y="-1700" data-rotate="180">
+        <center>
+          <img src="arquivos/full/Imagens/CSAW 2013.png" height="500px">
+        </center>
+  </div>
+  <div class="step" data-x="100" data-y="-2400" data-rotate="180">
+        <center>
+          <img src="arquivos/full/Imagens/3º HnR 2013.png" height="500px">
+        </center>
+  </div>
+  <div class="step" data-x="-1000" data-y="-2400" data-rotate="180">
+    <h1>Attack/Defense</h1>
+        <center>
+         <div>De forma genérica, as equipes recebem uma VM com diversos serviços (alguns vulneráveis), e o objetivo é capturar as bandeiras alheias e proteger as do seu time com patchs.</div>
+	<div><a href="arquivos/full/Video/defcon.mp4">DEF CON Finals video</a></div>
+        </center>
+  </div>
+  <div class="step" data-x="1000" data-y="-2000" data-rotate="-90">
+    <h1>Write-ups</h1>
+        <center>
+          <div>
+	  São tutoriais que apresentam a resolução de um desafio por alguma equipe após a competição.
+          </div>
+        </center>
+  </div>
+  <div class="step" data-x="1200" data-y="-3100" data-rotate="-90">
+    <h1>Hints</h1>
+        <center>
+          <div>São dicas dadas para os challenges durante a competição. Algumas dicas, dependendo do desafio, já saem desde quando o mesmo é lançado, e outras são dadas durante o decorrer, conforme a dificuldade apresentada pelas equipes.</div>
+        </center>
+  </div>
+  <div class="step" data-x="1400" data-y="-4200" data-rotate="-90">
+            <center>
+          <img src="arquivos/full/Imagens/logo-ctftime.png" height="50px" /><br>
+          <div>Site referência no meio, onde os organizadores de CTFs, que normalmente são as próprias equipes, cadastram seus eventos. O capitão de cada time pode registrar o mesmo lá, e os membros, através de um hash, ingressam nele no site. O CTFTime.org mantém um ranking anual das melhores equipes, e também armazena write-ups. </div>
+	   </center>
+  </div>
+  <div class="step" data-x="1400" data-y="-5300" data-rotate="-90">
+        <center>
+          <img src="arquivos/full/Imagens/CTFTime.png" height="500px">
+        </center>
+  </div>
+  <div class="step" data-x="2500" data-y="-5300" data-rotate="-90">
+    <h1>Principais Competições</h1>
+        <center>
+	<div><strong>Brasileiras:</strong></div>
+	<div><pre>
+<strong>Hacking n' Roll</strong> (Organizado pelo INSERT)
+<strong>Pwn2Win CTF</strong> (Organizado pelo ELT)
+	</pre></div> 
+	<div><pre> 
+        </center>
+  </div>
+  <div class="step" data-x="2000" data-y="-3100" data-rotate="-90">
+    <h1>Principais Competições</h1>
+    <center>
+	<div><strong>Gringas:</strong></div>
+<div><pre>
+<strong>DEF CON Quals e Finals</strong>
+<strong>Codegate Quals e Finals</strong>
+<strong>HITCON CTF</strong>
+<strong>CSAW CTF</strong>
+<strong>picoCTF e PlaidCTF (by PPP)</strong>
+	</pre></div> 
+    </center>
+  </div>
+  <div class="step" data-x="2800" data-y="-3100" data-rotate="-90">
+    <h1>Como aprender?</h1>
+    <center>
+    <div><pre>
+<strong>Participe de CTFs</strong>, 
+principalmente os brasileiros!!!
+
+Verifique os documentos
+(palestras, artigos, links...)
+disponíveis em <strong>http://ctf-br.org/docs</strong>, pois 
+há muito conteúdo interessante e introdutório. 
+    </div><pre>   
+    </center>
+  </div>
+<div class="step" data-x="5000" data-y="-4200" data-rotate="-90">
+            <center>
+          <h1>Como aprender?</h1>
+	  <div><strong>Shelter Labs</strong> – www.shellterlabs.com</div><br>
+          <div>Plataforma online desenvolvida pelo INSERT para estudar com desafios de CTFs nacionais e internacionais:</div>
+	   <img src="arquivos/full/Imagens/shelter_logo_para_fundo_branco.png" height="100px">
+	   </center>
+  </div>
+<div class="step" data-x="5800" data-y="-4200" data-rotate="-90">
+            <center>
+          <h1>Conclusão</h1>
+	  <div><strong>CTFs</strong> são divertidos</div><br>
+          <div><strong>CTFs</strong> exigem trabalho em equipe</div><div> (a não ser que você seja o tomcr00se)</div>
+	   </center>
+  </div>
+<div class="step" data-x="6400" data-y="-4200" data-rotate="-90">
+            <center>
+          <h1>Conclusão</h1>
+	  <div><strong>CTFs</strong> fazem você crescer em diversas áreas do conhecimento, e aprender a resolver desafios rapidamente em equipe;</div><br>
+          <div><strong>CTFs</strong> deixam você preparado e motivado para desafios da vida real!</div><br>
+	<div><strong>CTFs</strong> podem ser lucrativos, pois a maioria possuem premiações ($$)!!!</div>
+	   </center>
+  </div>
+  <div class="step" data-x="3600" data-y="-3100" data-rotate="-90">
+    <h1>Mais informações:</h1>
+	<center>	
+	<div>ctf-br.org<div><br>
+    <div>Irc : #ctf-br</div>
+	</center>  
+  </div>
+  <div class="step" data-x="4600" data-y="-3100" data-rotate="-90">
+    <h1>Perguntas?</h1>
+  </div>
+<!--<div id="class" class="step" data-x="1000" data-y="-2000" data-rotate="-90">
+    <h1>OO não precisa de Classes!<br>(mas assim é mais gostoso)</h1>
+    <pre class="coffeescript"><code>
+    class Animal
+      constructor: (@name) ->
+      move: (metros) ->
+        log "#{@name} andou #{metros}m."
+
+    class Cavalo extends Animal
+      move: ->
+        log "Trotando..."
+        super 5
+    </code></pre>
+  </div>
+  <div id="class-ponto" class="step" data-x="1200" data-y="-2300" data-rotate="-90" data-scale="0.4">
+    <h1>O construtor que você sempre quis</h1>
+    <pre class="coffeescript"><code>
+        class Ponto
+            constructor: ({@x, @y, @cor})->
+                throw new Error 'bad x' if @x<0
+                throw new Error 'bad y' if @y<0
+
+        log new Ponto x:11, y:22, cor:'red' # Ok
+
+        log new Ponto x:-1, y:22, cor:'F00' # Erro
+    </code></pre>
+  </div>
+  <div id="prototype" class="step" data-x="1700" data-y="-2000" data-rotate="-90">
+    <h1>Estendendo um protótipo</h1>
+    <li class="visible"><pre class="coffeescript"><code>
+      Number::times = (bl)-> do bl for n in [1..@]
+
+      3.times -> log 'yeah!'
+    </code></pre></li>
+    <li><pre class="coffeescript"><code>
+      Number::times = (bl)-> bl(n) for n in [1..@]
+
+      3.times (n)-> log ">> #{n} yeah!"
+    </code></pre></li>
+  </div>
+  <div id="coco" class="step" data-x="2500" data-y="-2000">
+    <h1>Do café à meta-anfetamina</h1>
+    <li>
+      <strong>Coco</strong> - o radical
+      <pre class="coffeescript"><code>
+        meuObj{a, b} = objetoEstrangeiro
+        $('#bloco').textContent = "(<span class="atencao">#<></span>)"
+        export x, y # browser, node.js, etc...
+      </code></pre>
+      <ul>
+        <li class="visible">http://github.com/satyr/coco</li>
+        <li class="visible">http://satyr.github.io/cup</li>
+      </ul>
+    </li>
+  </div>
+  <div id="iced" class="step" data-x="3550" data-y="-2000">
+    <h1>Do café à meta-anfetamina (2)</h1>
+    <li class="visible">
+      <strong>IcedCoffeeScript</strong> - o assíncrono
+      <pre class="coffeescript"><code>
+          search = (keyword, callback) ->
+              url = "http://search.com/json?q="+keyword
+              <span class="atencao">await</span> $.getJSON url, <span class="atencao">defer</span> json
+              callback json.results
+      </code></pre>
+      <ul>
+        <li class="visible">http://maxtaco.github.io/coffee-script</li>
+      </ul>
+    </li>
+  </div>
+  <div id="iced-2" class="step" data-x="4600" data-y="-2000">
+    <h1>Do café à meta-anfetamina (2<small>.5</small>)</h1>
+    <li class="visible">
+      <strong>IcedCoffeeScript</strong> - o assíncrono <em>(<strong>em série</strong>)</em>
+      <pre class="coffeescript"><code>
+        serialSearch = (keywords, callback) ->
+          out = []
+          for k,i in keywords
+              <span class="atencao">await</span> search k, <span class="atencao">defer</span> out[i]
+          callback out
+      </code></pre>
+    </li><li>
+      <strong>IcedCoffeeScript</strong> - o assíncrono <em>(<strong>em paralelo</strong>)</em>
+      <pre class="coffeescript"><code>
+          parallelSearch = (keywords, callback) ->
+              out = []
+              <span class="atencao">await</span> 
+                  for k,i in keywords
+                      search k, <span class="atencao">defer</span> out[i]
+              callback out
+      </code></pre>
+    </li>
+  </div>
+  <div id="iced-3" class="step" data-x="5650" data-y="-2000">
+    <h1>IcedCoffee provando o seu valor...</h1>
+    <li class="visible">
+      <strong>CoffeeScript</strong> em paralelo
+      <pre class="coffeescript"><code>
+        parallelSearch = (keywords, cb) ->
+          results = []
+          n_out = 0
+          cb_generator = (i) ->
+            n_out++
+            (json) ->
+              results[i] = json
+              if n_out-- is 0
+                cb results
+          for k,i in keywords
+            search k, cb_generator i
+      </code></pre>
+    </li>
+  </div>
+  <div id="contracts" class="step" data-x="5500" data-y="-1000">
+    <h1>Do café à meta-anfetamina (3)</h1>
+    <li class="visible">
+      <strong>Contracts.coffee</strong> - o rigoroso
+      <pre class="coffeescript"><code>
+        square :: (Num) -> Num
+        square = (x) -> x * x
+
+        square "a string" # throws a run-time error
+      </code></pre>
+      <pre class="error"><small><code>
+        Error: Contract violation: expected &lt;Num>,
+        actual: "a string"
+        Value guarded in: id_module:42
+          -- blame is on: client_code:104
+        Parent contracts:
+        (Num) -> Num
+      </code></small></pre>
+      <ul>
+        <li class="visible">http://disnetdev.com/contracts.coffee</li>
+      </ul>
+    </li>
+  </div>
+  <div id="ember" class="step" data-x="5500" data-y="0">
+    <h1>Do café à meta-anfetamina (4)</h1>
+    <li class="visible">
+      <strong>EmberScript</strong> - o... viabilizador?
+      <pre class="coffeescript"><code>
+        class PostsController extends Ember.ArrayController
+            trimmedPosts: <span class="atencao">~></span>
+                @content.slice(0, 3)
+      </code></pre>
+      <pre class="javascript"><code>
+        var PostsController;
+        var get$ = Ember.get;
+        PostsController = Ember.ArrayController.extend({
+            trimmedPosts: Ember.computed(function () {
+                return get$(this, 'content').slice(0, 3);
+            }).property('content.@each')
+        });
+      </code></pre>
+      <ul>
+        <li class="visible">http://emberscript.com</li>
+      </ul>
+    </li>
+  </div>
+  <div id="coffee2" class="step" data-x="5500" data-y="750">
+    <h1>Tudo junto e mais um pouco</h1>
+    <h2>CoffeeScript <span>II</span>: a ira Khan</h2>
+    <li><b>Otimizadores</b></li>
+    <li><b>Geradores de código</b></li>
+    <li><b>Customização de output</b></li>
+    <li><b>Compiladores</b></li>
+    <li><small>source map, relatório de error melhor, sem colisão de nomes, ...</small></li>
+    <li class="visible">http://michaelficarra.github.com/CoffeeScriptRedux</li>
+    <li class="visible">http://www.ustream.tv/recorded/29301270</li>
+  </div>
+  <div id="teste" class="step" data-x="5000" data-y="2200" data-rotate="180" data-scale="0.6">
+    <h1>Teste... 1, 2, 3... Teste!</h1>
+    <strong>Usando <code>mocha</code> e <code>chai</code></strong>
+    <pre class="coffeescript"><code>
+    assert = require("chai").assert
+    meuModulo = require("meu-modulo")
+
+    suite "Coleção de testes", ->
+
+        test "meu primeiro teste", ->
+            assert.equal meuModulo.quadrado(3), 9
+
+        test "um método assíncrono", (done)->
+            meuModulo.download url, (err, data)->
+                assert.isNull err, "can read"
+                assert.equal data, "meu conteúdo"
+                do done
+    </code></pre>
+  </div>
+  <div id="teste2" class="step" data-x="5000" data-y="1700" data-rotate="180" data-scale="0.6">
+    <h1>Rodaâando!</h1>
+    <pre>$ <span class="atencao">npm test</span>
+
+> omnifs@0.0.1 test /home/aurium/Projetos/omnifs
+> <span class="atencao">mocha --compilers coffee:coffee-script --ui tdd</span>
+
+<b>․․․․․․․․․․․․<span class="error">․</span>․․․․</b>
+
+<span class="error">✖ 1 of 17 tests failed:</span>
+
+1) splitURI method recognize undefined protocol as "file":
+      
+    <in>actual</in> <out>expected</out>
+      
+    fi<out>le</out><in>go</in>
+
+<b class="error">npm ERR!</b> Test failed.  See above for more details.
+<b class="error">npm ERR!</b> not ok code 0</pre>
+  </div>
+  <div id="doc" class="step" data-x="5700" data-y="2000" data-scale="0.6">
+    <h1>Documentação (aquela parte chata)</h1>
+    <strong>Usando <code>codo</code></strong>
+    <small>(http://coffeedoc.info)</small>
+    <pre class="coffeescript"><code>
+    # Base class for all animals.
+    #
+    # @example How to subclass an animal
+    #   class Lion extends Animal
+    #     move: (direction, speed): ->
+    #
+    class Example.Animal
+
+      # The Answer to the Ultimate Question
+      @ANSWER = 42
+
+      # Construct a new animal.
+      #
+      # @param [String] name the name of the animal
+      #
+      constructor: (@name, @birthDate = new Date()) ->
+
+      # Move the animal.
+      #
+      # @param [Object] options the moving options
+      # @option options [String] direction the moving direction
+      # @option options [Number] speed the speed in mph
+      #
+      move: (options = {}) ->
+    </code></pre>
+  </div>
+  <div id="problemas" class="step" data-x="5700" data-y="1500" data-scale="0.6" data-rotate="180">
+    <h1>O amargo do café</h1>
+    <li> White-space significante
+    <ul>
+      <li class="visible"> a+b diferente de a + b </li>
+      <li class="visible"> f(a) diferente de f (a) </li>
+    </ul></li>
+    <li> Conflito de nomes (não use <code>_var</code>!) </li>
+  </div>
+  <div id="bolo" class="step" data-x="-1700" data-y="-2400">
+    <h1>Bolo &mdash; remake do jogo para a web</h1>
+    <img src="arquivos/bolo.png" width="100%">
+    <li class="visible">http://stephank.github.io/orona/bolo.html</li>
+  </div>-
+  <div id="nack" class="step" data-x="-1700" data-y="-1600">
+    <h1>nack &mdash; Node powered Rack server</h1>
+    <pre class="coffeescript"><code>
+    http = require 'http'
+    nack = require 'nack'
+
+    app = nack.createProcess "/path/to/config.ru"
+
+    (http.createServer (req, res)->
+      app.proxy req, res
+    ).listen 8124, "127.0.0.1"
+    </code></pre>
+    <li class="visible">http://github.com/josh/nack</li>
+  </div>
+  <div id="apiary" class="step" data-x="-1700" data-y="-850">
+    <h1>Apiary &mdash; prototipagem e debug de APIs</h1>
+    <div></div>
+    <li class="visible">http://apiary.io</li>
+  </div>
+  <div id="annotateit" class="step" data-x="-1700" data-y="-150">
+    <h1>AnnotateIt &mdash; <small>marque e comente qualquer site</small></h1>
+    <center>
+    <img src="arquivos/annotateit-annotator.png" width="400">
+    <br>
+    <img src="arquivos/annotateit-thumb-add.png"    border="4" width="200">
+    <img src="arquivos/annotateit-thumb-editor.png" border="4" width="200">
+    <img src="arquivos/annotateit-thumb-viewer.png" border="4" width="200">
+    </center>
+    <li class="visible">http://annotateit.org</li>
+  </div>
+  <div id="hubot" class="step" data-x="-1700" data-y="600">
+    <h1>Hubot &mdash; o bot plugável do GitHub</h1>
+    <div><img src="arquivos/hubot-schematic.svg" width="100%"></div>
+    <li class="visible">http://hubot.github.com</li>
+  </div>
+  <div id="zombie" class="step" data-x="-1800" data-y="1600" data-rotate="-90">
+    <h1>Zombie.js &mdash; um pseudo browser para... testes</h1>
+    <pre class="coffeescript"><code>
+    Browser = require "zombie"
+    assert = require "assert"
+
+    # Visita uma página local
+    browser = new Browser
+    browser.visit "http://localhost:3000/", ->
+        # Preenche e-mail, senha e envia p form
+        browser
+            .fill("email", "zombie@underworld.dead")
+            .fill("password", "eat-the-living")
+            .pressButton "Sign Me Up!", ->
+                # Form enviado, nova página carregada.
+                assert.ok browser.success
+                assert.equal browser.text("title"),
+                             "Welcome To Brains Depot"
+    </code></pre>
+    <li class="visible">http://zombie.labnotes.org</li>
+  </div>
+  <div id="overview" class="step" data-x="1000" data-y="0" data-scale="7">
+    <code><i></i># npm install -g coffee-script</code>
+  </div>
+</div>->
+
+<!-- id="impress" -->
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<div id="term-border">
+  <div id="term">
+    <pre class="code coffee" onmouseover="coffeeTerm.editMode(true)"></pre>
+    <pre class="code js"></pre>
+    <div class="output"></div>
+    <!-- button onclick="coffeeTerm.run()">Executar</button -->
+    <img id="run" src="arquivos/run.svg" onclick="coffeeTerm.run()" width="26"/>
+  </div>
+</div>
+<script src="arquivos/impress.js"></script>
+<script type="text/coffeescript">
+    # Ajusta tópicos da apresentação
+    $('.step').each (nStep, step)->
+        metaStep = $('<div class="metaStep"/>').insertBefore step
+        metaStep.attr 'id', 'meta-' + step.id  if step.id
+        $(step).appendTo metaStep
+        $('li', step).each (nLi, li)->
+            if 'visible' not in li.classList
+                newStep = $(step).clone().appendTo metaStep
+                newStep[0].id += '-' + 'ABCDEFGHIJKLMNOPQRSTUWXYZ'[nLi] if newStep[0].id
+                for i in [1..nLi+1]
+                    $("li:nth-of-type(#{i})", newStep).addClass 'visible'
+
+    # Remove indentação base (o espaçamento da primeira linha) nos fontes
+    for codeEl in $('pre code')
+        lines = codeEl.innerHTML.replace(/^\s*\n/, '').split '\n'
+        indent = lines[0].match(/^(\s*)/)[1]
+        lines = lines.map (l)-> l[indent.length..]
+        codeEl.innerHTML = lines.join '\n'
+
+    # Highlight dos fontes
+    do hljs.initHighlightingOnLoad
+
+    # CSS Workarrounds
+    nav = window.navigator.userAgent.match(/webkit|firefox/i)[0].toLowerCase()
+    $(document.body).addClass nav
+
+    # Inicia apresentação
+    $ -> do impress().init
+</script>
+</body>
+</html>
